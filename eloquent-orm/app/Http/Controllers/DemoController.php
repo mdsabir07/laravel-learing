@@ -10,6 +10,9 @@ use Illuminate\Http\Request;
 class DemoController extends Controller
 {
     public function DemoAction(Request $request){
-        return Product::sum('price');
+        return Brand::create([
+            'brandName'=>'a',
+            'brandImg'=>'b'
+        ]);
     }
 }
